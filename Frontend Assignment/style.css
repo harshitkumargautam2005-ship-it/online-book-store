@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background: white;
+}
+
+
+/* Header */
+header {
+    height: 73px;
+    background: #09294d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+.logo p {
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 42px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffd900;
+}
+
+nav a.active {
+    border-bottom: 3px solid #ffd900;
+}
+
+
+/* Home */
+.home {
+    min-height: 270px;
+    background: #eaf4fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 25px 80px;
+}
+
+.home-text {
+    width: 500px;
+}
+
+.home-text h1 {
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.home-text h2 {
+    color: #0758a8;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.home-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.home-text button {
+    background: #09294d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home-text button:hover {
+    background: #0758a8;
+}
+
+
+/* Profile Image */
+.profile img {
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 2px 8px #aaa;
+}
+
+
+/* Main */
+main {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+
+/* Common Heading */
+section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+section h2 i {
+    color: #0758a8;
+    margin-right: 10px;
+}
+
+
+/* About, Skills, Education */
+.about,
+.skills,
+.education {
+    padding-top: 24px;
+}
+
+.about {
+    width: 290px;
+    float: left;
+    margin-right: 20px;
+}
+
+.about p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.skills {
+    width: 180px;
+    float: left;
+}
+
+.skills ul {
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.education {
+    width: 470px;
+    float: right;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.education th,
+.education td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.education th {
+    font-weight: bold;
+}
+
+
+/* Projects */
+.projects {
+    clear: both;
+    padding-top: 25px;
+}
+
+.project-container {
+    display: flex;
+    gap: 15px;
+}
+
+.project-card {
+    width: 32%;
+    border: 1px solid #ccc;
+    padding: 12px;
+    min-height: 105px;
+}
+
+.project-card h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.project-card a {
+    color: #1266ad;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.social {
+    width: 55%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #0758a8;
+}
+
+.social-icons a:nth-child(2) {
+    color: black;
+}
+
+.social-icons a:nth-child(3) {
+    color: #d13c32;
+}
+
+
+/* Contact Form */
+.contact-form {
+    width: 48%;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 7px 0 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.contact-form textarea {
+    height: 65px;
+    resize: none;
+}
+
+.contact-form button {
+    background: #09294d;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form .reset {
+    background: #ddd;
+    color: #222;
+    margin-left: 5px;
+}
+
+
+/* Footer */
+footer {
+    background: #09294d;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .about,
+    .skills,
+    .education {
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .social,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-top: 25px;
+    }
+}
